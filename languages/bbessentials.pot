@@ -1,0 +1,97 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Badabing Genesis Essentials\n"
+"POT-Creation-Date: 2015-06-19 13:06+0100\n"
+"PO-Revision-Date: 2015-06-19 13:04+0100\n"
+"Last-Translator: Didou Schol <didou@badabing.nl>\n"
+"Language-Team: Didou Schol <didou@badabing.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: badabing-essentials.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _b;_be\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: badabing-essentials.php:44
+#, php-format
+msgid ""
+"Whoa.. this plugin only works when you have installed the %1$sGenesis "
+"Framework%2$s"
+msgstr ""
+
+#: badabing-essentials.php:50
+#, php-format
+msgid ""
+"Uhm, the thing of it is, you kinda need the %1$sGenesis Framework %2$s%3$s "
+"or greater for these translations to make any sense."
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:80
+msgid "Badabing - Featured Posts"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:406
+msgid "Number cols"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:417
+msgid "Layout style"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:429
+msgid "Show permalink button"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:433
+msgid "Permalink Button Style"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:436
+msgid "Themed style"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:441
+msgid "Permalink Button Class"
+msgstr ""
+
+#: widgets/badabing.featuredposts.php:446
+msgid "Info"
+msgstr ""
+
+#: widgets/badabing.widgets.php:37
+msgid "Badabing - Simple Posts"
+msgstr ""
+
+#: widgets/badabing.widgets.php:162
+msgid "Title, then date"
+msgstr ""
+
+#: widgets/badabing.widgets.php:163
+msgid "Date, then title"
+msgstr ""
+
+#: widgets/badabing.widgets.php:164
+msgid "Title only"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Badabing Genesis Essentials"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.badabing.nl"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Reusable Genesis Widgets, Functions etcetera"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Didou Schol"
+msgstr ""

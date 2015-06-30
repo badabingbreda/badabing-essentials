@@ -1,0 +1,156 @@
+
+/*--------------------------------------------------------------
+Social
+--------------------------------------------------------------*/
+.social-icons
+{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	width: 30px;
+	z-index: 9999;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.social-icons.appear-right
+{
+	left: auto;
+	right: 0;
+}
+.social-icons.appear-top
+{
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	top: 0;
+	height: 30px;
+	width: auto;
+	display: inline-block;
+}
+.social-icons.appear-bottom
+{
+	left: 50%;
+	right: auto;
+	top: auto;
+	bottom: 0;
+	height: 30px;
+	width: auto;
+	display: inline-block;
+}
+.social-icons A
+{
+	background: #333;
+	height: 30px;
+	width: 30px;
+	margin-bottom: 1px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFF;
+	display: inline-block;
+	position: relative;
+}
+.social-icons A:hover
+{
+	background: #000000;
+	color:#ffffff;
+}
+.social-icons A SPAN
+{
+	background: #333;
+	padding: 6px 10px;
+	font-size: 11px;
+	font-family: Arial;
+	text-decoration: none;
+	position: absolute;
+	border-radius: 1px;
+	white-space: nowrap;
+	line-height: 1;
+	font-style: italic;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+.social-icons A SPAN:after
+{
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width: 4px;
+}
+.social-icons A:hover SPAN
+{
+	opacity: 1;
+	visibility: visible;
+}
+.social-icons.appear-left A SPAN
+{
+	left: 130%;
+	top: 2px;
+	margin-left: 10px;
+}
+.social-icons.appear-left A SPAN:after
+{
+	border-color: transparent #333 transparent transparent;
+	left: 0;
+	top: 50%;
+	margin-top: -4px;
+	margin-left: -8px;
+}
+.social-icons.appear-left A:hover SPAN
+{
+	left: 100%;
+}
+.social-icons.appear-right A SPAN
+{
+	right: 130%;
+	top: 2px;
+	margin-right: 10px;
+}
+.social-icons.appear-right A SPAN:after
+{
+	border-color: transparent transparent transparent #333;
+	margin-right: -8px;
+	margin-top: -4px;
+	top: 50%;
+	right: 0;
+}
+.social-icons.appear-right A:hover SPAN
+{
+	right: 100%;
+}
+.social-icons.appear-bottom A SPAN
+{
+	bottom: 130%;
+	left: 0;
+	margin-bottom: 10px;
+}
+.social-icons.appear-bottom A SPAN:after
+{
+	border-color: #333 transparent transparent transparent;
+	margin-bottom: -8px;
+	left: 10px;
+	bottom: 0;
+}
+.social-icons.appear-bottom A:hover SPAN
+{
+	bottom: 100%;
+}
+.social-icons.appear-top A SPAN
+{
+	left: 0;
+	top: 130%;
+	margin-top: 10px;
+}
+.social-icons.appear-top A SPAN:after
+{
+	border-color: transparent transparent #333 transparent;
+	margin-top: -8px;
+	left: 10px;
+	top: 0;
+}
+.social-icons.appear-top A:hover SPAN
+{
+	top: 100%;
+}
