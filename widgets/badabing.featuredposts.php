@@ -50,7 +50,8 @@ class Badabing_Featured_Post extends WP_Widget {
       'layout_style'            => 'type1',
       'permalink_button'        => 0,
       'permalink_button_style'  => 'flbuilder',
-      'permalink_button_style'  => 'default',
+      'permalink_button_class'  => 'default',
+      'permalink_button_align'  => 'left',
       'show_gravatar'           => 0,
       'gravatar_alignment'      => '',
       'gravatar_size'           => '',
@@ -192,7 +193,7 @@ class Badabing_Featured_Post extends WP_Widget {
           $permalink_button = sprintf ( '<div class="fl-button-wrap fl-button-width-auto fl-button-right"><a href="%s" target="_self" class="fl-button" role="button"><span class="fl-button-text">%s</span></a></div>' , get_permalink() , $instance['more_text'] );
         break;
         case 'themed':
-          $permalink_button = sprintf ( '<a href="%s" class="badbtn btn-default btn-%s">%s</a>' , get_permalink() , $instance['permalink_button_class'] , $instance['more_text'] );
+          $permalink_button = sprintf ( '<div class="btn-align-%s"><a href="%s" class="badbtn btn-%s">%s</a></a>' , $instance['permalink_button_align'] , get_permalink() , $instance['permalink_button_class'] , $instance['more_text'] );
         break;
       }
     }
@@ -444,6 +445,14 @@ class Badabing_Featured_Post extends WP_Widget {
             <option value="primary" <?php selected( 'primary', $instance['permalink_button_class'] ); ?>><?php _e('Primary', 'bbessentials');?></option>
             <option value="success" <?php selected( 'success', $instance['permalink_button_class'] ); ?>><?php _e('Success', 'bbessentials');?></option>
             <option value="info" <?php selected( 'info', $instance['permalink_button_class'] ); ?>><?php _be('Info', 'bbessentials');?></option>
+          </select>
+        </p>
+         <p>
+          <label for="<?php echo $this->get_field_id( 'permalink_button_align' ); ?>"><?php _be( 'Permalink Button Align', 'bbessentials' ); ?>:</label>
+          <select id="<?php echo $this->get_field_id( 'permalink_button_align' ); ?>" name="<?php echo $this->get_field_name( 'permalink_button_align' ); ?>">
+            <option value="left" <?php selected( 'default', $instance['permalink_button_align'] ); ?>><?php _e('Left', 'bbessentials');?></option>
+            <option value="center" <?php selected( 'center', $instance['permalink_button_align'] ); ?>><?php _e('Center', 'bbessentials');?></option>
+            <option value="right" <?php selected( 'right', $instance['permalink_button_align'] ); ?>><?php _e('Right', 'bbessentials');?></option>
           </select>
         </p>
           
