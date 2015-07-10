@@ -19,6 +19,8 @@ register_activation_hook( __FILE__, 'fst_badabing_essentials_activation_check' )
 include_once ( 'widgets/badabing.widgets.php');
 include_once ( 'widgets/badabing.featuredposts.php');
 include_once ( 'widgets/badabing.socialicons.php');
+include_once ( 'widgets/badabing.team.php');
+
 
 /**
  * Checks for activated Genesis Framework and its minimum version before allowing plugin to activate

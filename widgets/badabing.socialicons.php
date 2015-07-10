@@ -68,10 +68,10 @@ class badabing_social_icons extends WP_Widget {
     if ($instance['facebookurl']!="" | $instance['twitterurl'] !="" | $instance['googleplusurl'] !="" | $instance['youtubeurl'] !="") :
 
       echo ('<div class="social-icons appear-'.$instance[ 'bdisplay' ].'">');      
-      if ( $instance['facebookurl']   != "" ) printf ('<a href="%s" class="facebook" data-title="%s" target="%s"><i class="fa fa-facebook"></i><span>%s</span></li>', $instance['facebookurl'] , $instance['facebooktext'] , $instance['target'], $instance['facebooktext']);
-      if ( $instance['twitterurl']    != "" ) printf ('<a href="%s" class="twitter" data-title="%s" target="%s"><i class="fa fa-twitter"></i><span>%s</span></li>', $instance['twitterurl'] , $instance['twittertext'] , $instance['target'], $instance['twittertext']);
-      if ( $instance['googleplusurl'] != "" ) printf ('<a href="%s" class="gplus" data-title="%s" target="%s"><i class="fa fa-google-plus"></i><span>%s</span></li>', $instance['googleplusurl'] , $instance['googleplustext'] , $instance['target'], $instance['googleplustext']);
-      if ( $instance['youtubeurl']    != "" ) printf ('<a href="%s" class="youtube" data-title="%s" target="%s"><i class="fa fa-youtube"></i><span>%s</span></li>', $instance['youtubeurl'] , $instance['youtubetext'] , $instance['target'], $instance['youtubetext']);
+      if ( $instance['facebookurl']   != "" ) printf ('<a href="%s" class="facebook" data-title="%s" target="%s"><i class="fa fa-facebook"></i><span>%s</span></a>', $instance['facebookurl'] , $instance['facebooktext'] , $instance['target'], $instance['facebooktext']);
+      if ( $instance['twitterurl']    != "" ) printf ('<a href="%s" class="twitter" data-title="%s" target="%s"><i class="fa fa-twitter"></i><span>%s</span></a>', $instance['twitterurl'] , $instance['twittertext'] , $instance['target'], $instance['twittertext']);
+      if ( $instance['googleplusurl'] != "" ) printf ('<a href="%s" class="gplus" data-title="%s" target="%s"><i class="fa fa-google-plus"></i><span>%s</span></a>', $instance['googleplusurl'] , $instance['googleplustext'] , $instance['target'], $instance['googleplustext']);
+      if ( $instance['youtubeurl']    != "" ) printf ('<a href="%s" class="youtube" data-title="%s" target="%s"><i class="fa fa-youtube"></i><span>%s</span></a>', $instance['youtubeurl'] , $instance['youtubetext'] , $instance['target'], $instance['youtubetext']);
       echo '</div>';
     endif;
     
